@@ -42,6 +42,7 @@ type alias User =
     , uType : String
     }
 
+
 users : List User
 users =
     [ { name = "Roberto", uType = "Student" }
@@ -49,16 +50,19 @@ users =
     , { name = "Andrea", uType = "Student" }
     ]
 
+
 onlyStudents : List User -> List String
 onlyStudents userList =
     List.map
         (\u ->
             if u.uType == "Student" then
                 u.name
+
             else
                 ""
         )
         userList
+
 
 type alias Videogame =
     { title : String, releaseYear : Int, available : Bool, downloads : Int, genres : List String }
