@@ -45,9 +45,8 @@ type alias User =
 
 users : List User
 users =
-    [ { name = "Roberto", uType = "Student" }
+    [ { name = "Sabdi", uType = "Student" }
     , { name = "Mitsiu", uType = "Professor" }
-    , { name = "Andrea", uType = "Student" }
     ]
 
 
@@ -100,7 +99,7 @@ type alias Computer =
 
 myLaptop : Computer
 myLaptop =
-    { ram = "8GB"
+    { ram = "8gb"
     , model = "Nitro V15"
     , brand = "Acer"
     , screenSize = "15.6"
